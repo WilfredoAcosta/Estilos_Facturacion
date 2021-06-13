@@ -6,8 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Venta</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/login_registro.css">
 </head>
 <body>
+
+    <header class="main-header">
+        <div class="container container--flex">
+          <h1 class="main-title"><span class="color-span">Panaderia Los Reales</span> </h1>
+          <nav class="main-nav">
+            <span class="icon-menu" id="btn-menu"><i class="fas fa-bars"></i></span>
+            <ul class="menu" id="menu">
+              <li class="menu__item"><a href="index.html" class="menu__link"><span style="color: black;">Inicio</span></a></li>
+              <li class="menu__item"><a href="factura.html" class="menu__link menu__link--select"><span  style="color: black;">Ventas</span></a></li>
+              <li class="menu__item"><a href="login.html" class="menu__link "><span  style="color: black;">Login</span></a></li>
+              <li class="menu__item"><a href="registrar.html" class="menu__link"><span  style="color: black;">Registro</span></a></li>
+              
+            </ul>
+          </nav>
+        </div>
+      </header>
      
       <section id="container">
             <div class="tittle_page">
@@ -57,17 +75,77 @@
     </div>
 </div>
 
-<table class="tbl_venta">
-<thead>
-    <tr>
-        <th width="100px">Codigo</th>
-        <th width>Descripcion</th>
-        <th width="100px">Cantidad</th>
-        <th width="textright">Precio</th>
-    </tr>
-</thead>
 
-</table>
+  
       </section>
+
+     
+        <table class="table-fill">
+        <thead>
+        <tr>
+        <th class="text-left">Producto</th>
+        <th class="text-left">Precio</th>
+        <th class="text-left">Cantidad</th>
+        <th class="text-left">Total</th>
+        <th class="text-left">Accion</th>
+        </tr>
+        </thead>
+        <tbody class="table-hover">
+        <tr>
+        <td class="text-left">January</td>
+        <td class="text-left">$ 50,000.00</td>
+        <td class="text-left">$ 50,000.00</td>
+        <td class="text-left">$ 50,000.00</td>
+        <td class="text-left"><input type="button" value="Cancelar pedido"></td>
+        </tr>
+        <tr>
+            <td class="text-left">January</td>
+            <td class="text-left">$ 50,000.00</td>
+            <td class="text-left">$ 50,000.00</td>
+            <td class="text-left">$ 50,000.00</td>
+            <td class="text-left"><input type="button" value="Cancelar pedido"></td>
+        </tr>
+        <tr>
+            <td class="text-left">January</td>
+            <td class="text-left">$ 50,000.00</td>
+            <td class="text-left">$ 50,000.00</td>
+            <td class="text-left">$ 50,000.00</td>
+            <td class="text-left"><input type="button" value="Cancelar pedido"></td>
+        </tr>
+        
+        </tbody>
+        </table>
+          
+
+      <footer class="main-footer">
+        <div class="container">
+          <div class="column column--50-25">
+            <h2 class="footer__title">Nosotros</h2>
+            <p class="footer__txt">Somos una empresa nacida desde la necesidad de brindar
+                pan de la mas alta calidad posible para asi poder darle a las personas la calidad que se merecen
+                ya sea para tomar un café con nuestro delicioso pan dulce o degustar sus alimentos con nuestro tostadito pan frances.
+            </p>
+            <cite class="footer__author">- Don Mario</cite>
+          </div>
+          
+         
+          <div class="column column--50-25">
+            <h2 class="footer__title">Contactanos</h2>
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+              <p class="contact__txt">Panaderia Los Reales</p>
+            </div>
+            <div class="contact-icon">
+              <i class="fas fa-phone-alt"></i>
+              <p class="contact__txt">+503 2245-4587</p>
+            </div>
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+              <p class="contact__txt">panaderialosreales@gmail.com</p>
+            </div>
+          </div>
+        </div>
+          <p class="copy">© 2021 Panaderia Los Reales. Todos los derechos reservados</p>
+      </footer>
 </body>
 </html>
