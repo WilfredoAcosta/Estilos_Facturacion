@@ -1,0 +1,72 @@
+
+.container2 {
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+  }
+
+  .invoice {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.10), 0 10px 10px rgba(0,0,0,0.13);
+    margin: 50px 0px;
+   padding: 50px 30px 30px;
+  }
+
+
+  h1 {
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: dark-gray;
+    font-size: 25px;
+    margin: 0 null 5px null;
+  }
+  
+  .container2 span {
+    color: rgb(167, 167, 167);
+    font-size: 14px;
+    letter-spacing: 2px;
+  }
+
+
+.container2 main {
+border: 1px dashed lightgray;
+border-left-width: 0px;
+border-right-width: 0px;
+padding: 30px null;
+}
+figure{
+    margin-top: 5px;
+    padding-top: 5px;
+}
+.container2 a{
+ margin-top: 10px;
+    padding: 10px;
+        font-size: 19px;
+        font-weight: bold;
+        text-decoration: none;
+        text-transform: uppercase;
+        position: relative;
+        letter-spacing: 1px;
+}
+.container2 a::after{
+
+        content: "";
+        width: 0%;
+        height: 4px;
+        position: absolute, null 0 -10px null;
+        background-color: inherit;
+        transition: width .2s ease-in-out;
+      
+}
+
+.num1{
+color: lightslategray;
+}
+.num2{
+color: #da981f;
+}
+.invoice header h1{
+color: rgb(110, 110, 110);
+}
