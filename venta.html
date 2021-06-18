@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/login_registro.css">
+    <link rel="stylesheet" href="css/factura.css">
 </head>
 <body>
 
@@ -29,47 +30,78 @@
      
       <section id="container">
             <div class="tittle_page">
-                <h1><i class="fas fa-cube"></i> Nuevas Ventas</h1>
+                <h1 style="text-align: center; margin: 0 auto;">Nuevas Ventas</h1>
             </div>
+            <br>
             <div class="action_cliente">
-                <h4>Datos del cliente</h4>
-                <a href="#" class="btn_new btn_new_cliente"><i class="fas fa-plus"></i> Nuevo Cliente</a>
+              <br>
+              <br>
+                <h4 style="text-align: center; margin: 0 auto;">Datos del cliente </h4>
+                <br>
+               
             </div>
 <form name="form_new_cliente_venta" id="form_new_cliente_venta" class="datos">
     <input type="hidden" name="action" value="addCliente">
     <input type="hidden" id="idCliente" name="idCliente" value="" required>
-    <div class="wd30">
-        <label>Nit</label>
+    <div class="wd100">
+        <label>Nit:</label>
         <input type="text" name="nit_cliente" id="nit_cliente">
     </div>
-    <div class="wd30">
-        <label>Nombre</label>
+    <div class="wd100">
+        <label>Nombre:</label>
         <input type="text" name="nom_cliente" id="nom_cliente">
     </div>
-    <div class="wd30">
-        <label>Telefono</label>
+    <div class="wd100">
+        <label>Telefono:</label>
         <input type="text" name="tel_cliente" id="tel_cliente">
     </div>
     <div class="wd100">
-        <label>Direccion</label>
+        <label>Direccion:</label>
         <input type="text" name="dir_cliente" id="dir_cliente">
     </div>
     <div id="div_registro_cliente" class="wd100">
         <button type="submit" class="btn_save"><i class="far fa-save fa-lg"></i>Guardar</button>
     </div>
 </form>
+<br>
+<div class="tittle_page">
+  <h4 style="text-align: center; margin: 0 auto;">Productos</h4>
+</div>
+<form name="form_new_cliente_venta" id="form_new_cliente_venta" class="datos">
+  <input type="hidden" name="action" value="addCliente">
+  <input type="hidden" id="idCliente" name="idCliente" value="" required>
+  <div class="wd100">
+      <label>Producto:</label>
+      <select name="cars" id="cars">
+        <option value="volvo">Relampago</option>
+        <option value="saab">Malu deja de simpearle a Eula</option>
+        <option value="mercedes">Larga Vida Lisa</option>
+        <option value="audi">Yanfei is love</option>
+      </select>
+  </div>
+  <div class="wd100">
+      <label>Cantidad:</label>
+      <input type="number" name="nom_cliente" id="nom_cliente">
+  </div>
+ 
+  <div id="div_registro_cliente" class="wd100">
+      <button type="submit" class="btn_save"><i class="far fa-save fa-lg"></i>Guardar</button>
+  </div>
+</form>
+
 <div class="datos_venta">
-    <h4>Datos de ventas</h4>
+    <h4 style="text-align: center; margin: 0 auto;">Datos de ventas</h4>
+    <br>
     <div class="datos">
         <div class="wd50">
             <label>Vendedor</label>
-            <p>Carlos Estrada Porras</p>
+            <p style="text-transform: uppercase; font-weight: 600;">Carlos Estrada Porras</p>
         </div>
         <div class="wd50">
             <label>Acciones</label>
             <div id="acciones_venta">
-                <a href="#" class="btn_ok textcenter" id="btn_anular_venta"><i class="fas fa-ban"></i> Anular </a>
-                <a href="#" class="btn_new textcenter" id="btn_facturar_venta"><i class="far fa-edit"></i> Procesar </a>
+                <a href="#" class="btn_delete textcenter num1" id="btn_anular_venta"><i class="fas fa-ban"></i> Anular </a>
+                <a href="#" class="btn_ok textcenter num2" id="btn_facturar_venta"><i class="far fa-edit"></i> Procesar </a>
             </div>
         </div>
     </div>
